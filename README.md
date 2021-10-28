@@ -18,4 +18,8 @@ Projeto feito utilizando Redux - Rafael Bamberg | Tribo 13 - B
 ## Contato
 
 Rafael Bamberg - raafaelbamberg@gmail.com
+
+## Link do Pull Request
+[TrybeWallet](https://github.com/tryber/sd-013-b-project-trybewallet/pull/132)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
