@@ -2,23 +2,24 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteItem } from '../actions';
+import '../App.css'
 
 class ExpensesTable extends Component {
   render() {
     const { expenses, deleteSelected } = this.props;
     console.log(expenses);
     return (
-      <table>
+      <table className='expenses-grid'>
         <thead>
           <tr>
-            <th>Descrição</th>
-            <th>Tag</th>
-            <th>Método de pagamento</th>
-            <th>Valor</th>
-            <th>Moeda</th>
-            <th>Câmbio utilizado</th>
-            <th>Valor convertido</th>
-            <th>Moeda de conversão</th>
+            <th>Descrição|</th>
+            <th>Tag|</th>
+            <th>Método de pagamento|</th>
+            <th>Valor|</th>
+            <th>Moeda|</th>
+            <th>Câmbio utilizado|</th>
+            <th>Valor convertido|</th>
+            <th>Moeda de conversão|</th>
             <th>Editar/Excluir</th>
           </tr>
         </thead>

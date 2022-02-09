@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
+import profile from './user-regular-24.png'
+import '../App.css'
 class Header extends Component {
   render() {
     const { email, expenses } = this.props;
@@ -14,8 +15,9 @@ class Header extends Component {
     return (
       <div>
         <header>
+          <img className='profile-flex' src={ profile } alt="profile"/>
           <p data-testid="email-field">{ email }</p>
-          <p data-testid="total-field">{total.toFixed(2)}</p>
+          <p data-testid="total-field">Valor total: {total.toFixed(2)}</p>
           <p data-testid="header-currency-field">BRL</p>
         </header>
       </div>

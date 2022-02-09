@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import fetchApi from '../services/api';
 import { getCurrencyThunk, renderCoins } from '../actions/index';
+import '../App.css'
 
 class Expenses extends Component {
   constructor() {
@@ -70,7 +71,7 @@ class Expenses extends Component {
     return (
       <section>
         <form onSubmit={ this.handleSubmit }>
-          <label htmlFor="value">
+          <label className='expenses-alt'  htmlFor="value">
             Valor:
             <input onChange={ this.handleChange } type="text" name="value" id="value" />
           </label>

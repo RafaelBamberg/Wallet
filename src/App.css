@@ -68,7 +68,28 @@
   }
 }
 
+body {
+  background-size: cover;
+  display: grid;
+  font-family: 'Inconsolata', monospace;
+  place-items: center;
+  }
 
+  header {
+    display: inline-flex;
+  }
+  
+  *{
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .Wallet {
+    padding-top: 100px;
+  }
+
+/* login */
 .login {
   text-align: center;
   padding-top: 200px;
@@ -100,4 +121,21 @@
 
 .button-move {
   padding-top: 20px;
+}
+/* Expenses */
+
+.expenses-flex {
+  padding-left: 100px;
+}
+
+.expenses-grid {
+  display: grid;
+}
+
+.profile-flex {
+  display: flex;
+}
+
+.header {
+  display: block;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Expenses from './Expenses';
 import ExpensesTable from './ExpensesTable';
 import Header from './Header';
+import '../App.css'
 
 export default class Wallet extends React.Component {
   constructor() {
@@ -12,7 +13,7 @@ export default class Wallet extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='Wallet'>
         <Header />
         <Expenses />
         <ExpensesTable />
