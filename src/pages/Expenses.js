@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import fetchApi from '../services/api';
 import { getCurrencyThunk, renderCoins } from '../actions/index';
 import '../App.css'
-
+// test
 class Expenses extends Component {
   constructor() {
     super();
